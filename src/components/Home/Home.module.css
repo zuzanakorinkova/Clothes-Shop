@@ -1,0 +1,20 @@
+
+.topimages {
+    position: relative;
+    margin-top: 2rem;
+  }
+  .topimages .large {
+    width: 65%;
+  }
+  
+  .topimages .small {
+    right: 25rem;
+    top: 20rem;
+    position: absolute;
+    width: 20%;
+  }
+  .companyName {
+    color: #fff;
+    font-size: 20rem;
+    position: fixed;
+  }
