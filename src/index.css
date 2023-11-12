@@ -24,6 +24,16 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
+h1 {
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 1;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Header */
 .topnav {
   display: flex;
@@ -44,3 +54,26 @@ body {
 /* Layout */
 
 /* Footer */
+.footerBackground {
+  background-image: url("./assets/bottomimg.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 80vh;
+  position: relative;
+}
+.contactInfo {
+  position: absolute;
+  color: #fff;
+  width: 20rem;
+  right: 8rem;
+  top: 5rem;
+}
+.socialIcons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.socialIcons a:hover {
+  scale: 1.2;
+}

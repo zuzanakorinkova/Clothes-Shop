@@ -1,20 +1,63 @@
 
-.topimages {
+
+  .mainContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20rem;;
+  }
+  .topText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .topText svg {
+    width: 10rem;
+    position: absolute;
+    top: 10rem;
+  }
+
+  .topimages {
     position: relative;
     margin-top: 2rem;
   }
   .topimages .large {
-    width: 65%;
+    width: 90%;
   }
   
   .topimages .small {
-    right: 25rem;
-    top: 20rem;
+    right: 3rem;
+    top: 16rem;
     position: absolute;
-    width: 20%;
+    width: 30%;
   }
   .companyName {
     color: #fff;
     font-size: 20rem;
     position: fixed;
+    z-index: 1;
+  }
+
+  .offerContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 10rem;;
+  }
+  .offerText .lineOne {
+    padding-left: 2rem;
+  }
+  .offerText .lineTwo {
+    padding-right: 2rem;
+  }
+  .offerFits {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
   }
