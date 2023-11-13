@@ -18,14 +18,20 @@ html {
 
 body {
   margin: 0;
-  padding: 2rem;
+  padding: 0;
   /* background: linear-gradient(180deg, #22182f 0%, #2c2437 100%); */
   background-color: #ffffff;
   font-family: 'Nunito', sans-serif;
 }
-
+header {
+  padding: 1rem;
+}
 h1 {
   font-size: 70px;
+  font-weight: 600;
+  line-height: 1;
+}
+h2 {
   font-weight: 600;
   line-height: 1;
 }
@@ -54,11 +60,14 @@ a {
 /* Layout */
 
 /* Footer */
+footer {
+  margin-top: 10rem;
+}
 .footerBackground {
   background-image: url("./assets/bottomimg.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-  height: 80vh;
+  height: 100vh;
   position: relative;
 }
 .contactInfo {

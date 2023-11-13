@@ -6,10 +6,14 @@ import { Outlet, Link } from "react-router-dom";
 export default function Layout() {
   return (
     <>
-    <header class="topnav">
+    <header className="topnav">
         <Link to="/shop">Shop for all</Link>
-        <Link to="/"> <img src={Logo} alt="logo" className='logo' /></Link>
-        <Link  to="/cart">    <img src={Basket} alt="shopping-basket" className='icon' /></Link>
+        <Link to="/"> 
+          <img src={Logo} alt="logo" name='logo' />
+        </Link>
+        <Link  to="/cart">
+          <img src={Basket} alt="shopping-basket" name='icon' />
+        </Link>
 
     </header>
     
