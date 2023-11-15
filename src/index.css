@@ -46,22 +46,7 @@ a {
   color: inherit;
 }
 
-/* Header */
-.topnav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.topnav a {
-  color: #000;
-  text-decoration: none;
-}
-.logo {
-  width: 2.5rem;
-}
-.icon {
-  width: 1.5rem;
-}
+
 .primaryBtn {
   background-color: #000;
   border: none;
@@ -73,8 +58,6 @@ a {
   font-size: 16px;
   width: 100%;
 }
-
-/* Layout */
 
 /* Footer */
 footer {

@@ -1,23 +1,11 @@
 import React from 'react';
-import Logo from '../assets/logo.svg'
-import Basket from '../assets/basket.svg'
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import Header from './Header/Header';
 
 export default function Layout() {
   return (
     <>
-    <header className="topnav">
-        <Link to="/shop">Shop for all</Link>
-        <Link to="/"> 
-          <img src={Logo} alt="logo" name='logo' width="50px" />
-        </Link>
-        <Link  to="/cart">
-          <img src={Basket} alt="shopping-basket" name='icon' />
-        </Link>
-
-    </header>
-    
-
+      <Header />
       <Outlet />
     </>
   )

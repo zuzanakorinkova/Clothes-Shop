@@ -6,7 +6,7 @@ import Layout from './Layout';
 import AllItems from './Shop/AllItems';
 import SingleItem from './Shop/SingleItem';
 
-export default function Header() {
+export default function Router() {
   return (
       <BrowserRouter>
       <Routes>

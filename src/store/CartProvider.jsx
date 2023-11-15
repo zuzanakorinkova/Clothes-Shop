@@ -67,8 +67,8 @@ const cartReducer = (state, action) => {
     
 }
 
-export default function CartContext(props) {
-    const [cartState, setCartState] = useReducer(
+export default function CartProvider(props) {
+    const [cartState, dispatchCartAction] = useReducer(
         cartReducer,
         defaultCartState
     )
