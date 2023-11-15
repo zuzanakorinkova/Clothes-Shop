@@ -14,6 +14,9 @@
     align-items: center;
     position: relative;
   }
+  .topText p {
+    text-align: left;
+  }
 
   .topText svg {
     width: 10rem;

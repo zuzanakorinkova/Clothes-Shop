@@ -9,7 +9,7 @@ export default function Layout() {
     <header className="topnav">
         <Link to="/shop">Shop for all</Link>
         <Link to="/"> 
-          <img src={Logo} alt="logo" name='logo' />
+          <img src={Logo} alt="logo" name='logo' width="50px" />
         </Link>
         <Link  to="/cart">
           <img src={Basket} alt="shopping-basket" name='icon' />

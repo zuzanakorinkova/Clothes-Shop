@@ -14,7 +14,6 @@ export default function AllItems() {
           <div key={collection.id}>
              
             <div className={styles.collectionContainer}>
-                <hr/>
               <div> 
                 <h2>{collection.name}</h2>
               </div>

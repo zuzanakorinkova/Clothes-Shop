@@ -8,6 +8,48 @@ import zuzanaThree from '../../../assets/z_3.jpg';
 import styles from '../Home.module.css';
 
 
+// MOVEMENT
+// hover effect on images - first, we see one large image => on hover => two images show up from background of the image to display
+        // position: absolute, on hover => position: relative ?
+// auto horizontal scrolling text
+// html:
+{/* <div class="wrapper">
+  <div class="marquee">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat, ante eu bibendum tincidunt, sem lacus vehicula augue, ut suscipit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat, ante eu bibendum tincidunt, sem lacus vehicula augue, ut suscipit.
+    </p>
+  </div>
+</div> */}
+
+//css 
+// .wrapper {
+//     max-width: 100%;
+//     overflow: hidden;
+//   }
+  
+//   .marquee {
+//     white-space: nowrap;
+//     overflow: hidden;
+//     display: inline-block;
+//     animation: marquee 10s linear infinite;
+//   }
+  
+//   .marquee p {
+//     display: inline-block;
+//   }
+  
+//   @keyframes marquee {
+//     0% {
+//       transform: translate3d(0, 0, 0);
+//     }
+//     100% {
+//       transform: translate3d(-50%, 0, 0);
+//     }
+//   }
+
 export default function Offers() {
   return ( 
     <>
