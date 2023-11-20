@@ -1,13 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import Router from "./components/Router";
 import Footer from "./components/Footer";
+import CartProvider from "./store/CartProvider";
 
 function App() {
     return (
-        <>
-        <Router />
-        <Footer />
-       </>
+        <CartProvider>
+            <Router  />
+            <Footer />
+       </CartProvider>
        
     )
 }

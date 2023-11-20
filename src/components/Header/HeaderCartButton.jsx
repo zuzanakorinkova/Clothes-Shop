@@ -36,7 +36,7 @@ const btnClasses = `${styles.basketBtn} ${btnIsHighlighted ? styles.basketBump :
 
 
   return (
-    <button className={btnClasses}>
+    <button className={btnClasses} onClick={props.onClick}>
       <span>
         <img src={Basket} alt="shopping-basket" className={styles.basketIcon} />
       </span>
