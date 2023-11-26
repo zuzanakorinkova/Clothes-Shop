@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useRef} from 'react'
 import dagmarOne from '../../../assets/d_1.jpg';
 import dagmarTwo from '../../../assets/d_2.jpg';
 import dagmarThree from '../../../assets/d_3.jpg';
@@ -6,51 +6,33 @@ import zuzanaOne from '../../../assets/z_1.jpg';
 import zuzanaTwo from '../../../assets/z_2.jpg';
 import zuzanaThree from '../../../assets/z_3.jpg';
 import styles from '../Home.module.css';
+import Marquee from "react-fast-marquee";
+import {motion, useInView, useAnimation} from "framer-motion";
 
 
-// MOVEMENT
-// hover effect on images - first, we see one large image => on hover => two images show up from background of the image to display
-        // position: absolute, on hover => position: relative ?
-// auto horizontal scrolling text
-// html:
-{/* <div class="wrapper">
-  <div class="marquee">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat, ante eu bibendum tincidunt, sem lacus vehicula augue, ut suscipit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat, ante eu bibendum tincidunt, sem lacus vehicula augue, ut suscipit.
-    </p>
-  </div>
-</div> */}
-
-//css 
-// .wrapper {
-//     max-width: 100%;
-//     overflow: hidden;
-//   }
-  
-//   .marquee {
-//     white-space: nowrap;
-//     overflow: hidden;
-//     display: inline-block;
-//     animation: marquee 10s linear infinite;
-//   }
-  
-//   .marquee p {
-//     display: inline-block;
-//   }
-  
-//   @keyframes marquee {
-//     0% {
-//       transform: translate3d(0, 0, 0);
-//     }
-//     100% {
-//       transform: translate3d(-50%, 0, 0);
-//     }
-//   }
 
 export default function Offers() {
+const refFitOne = useRef(null);
+const refFitTwo = useRef(null);
+
+const isInViewFitOne = useInView(refFitOne);
+const isInViewFitTwo = useInView(refFitTwo)
+
+const mainControlsFitOne = useAnimation();
+const mainControlsFitTwo = useAnimation();
+
+useEffect(() => {
+    if(isInViewFitOne) {
+       mainControlsFitOne.start("visible")
+
+    }
+
+    if(isInViewFitTwo) {
+        mainControlsFitTwo.start("visible")
+    }
+}, [isInViewFitOne, isInViewFitTwo])
+
+
   return ( 
     <>
         <div className={styles.offerContainer}>
@@ -61,29 +43,93 @@ export default function Offers() {
                 </svg>
 
             </div>
-            <div className={styles.offerFits}>
-                <div>
+            <div className={styles.offerFits} ref={refFitOne}>
+                <motion.div
+                variants={{
+                    hidden: {opacity: 0},
+                    visible: { opacity: 1}
+                }}
+                initial="hidden"
+                animate={mainControlsFitOne}
+                transition={{duration: 1, delay: 0}}
+                >
                     <img src={dagmarOne} alt="fit 1 image" width="100%" />   
-                </div>
-                <div>
+                </motion.div>
+                <motion.div
+                variants={{
+                    hidden: {opacity: 0, x: -75},
+                    visible: {opacity: 1, x: 0}
+                }}
+                initial="hidden"
+                animate={mainControlsFitOne}
+                transition={{duration: 1, delay: 0.5}}
+                >
                     <img src={dagmarTwo} alt="fit 1 image" width="100%" />
-                </div>
-                <div>
+                </motion.div>
+                <motion.div
+                  variants={{
+                    hidden: {opacity: 0, x: -75},
+                    visible: {opacity: 1, x: 0}
+                }}
+                initial="hidden"
+                animate={mainControlsFitOne}
+                transition={{duration: 1, delay: 1.25}}
+                >
                     <img src={dagmarThree} alt="fit 1 image" width="100%" />
-                </div>
+                </motion.div>
+            </div>
+        </div>
+        <div className={styles.marqueeContainer}>
+            <div className={styles.marqueeOne}>
+                <Marquee autoFill={true}>
+                    <div className={styles.marquee}>
+                        <span>POPULAR</span>
+                    </div>
+                </Marquee>
+            </div>
+            <div className={styles.marqueeTwo}>
+                <Marquee autoFill={true} direction='right'>
+                    <div className={styles.marquee}>
+                        <span>OUTFIT</span>
+                    </div>
+                </Marquee>
             </div>
         </div>
         <div className={styles.offerContainer}>
-            <div className={styles.offerFits}>
-                <div>
+            <div ref={refFitTwo} className={styles.offerFits}>
+                <motion.div 
+                variants={
+                    {hidden: {opacity: 0, x: 75},
+                    visible: {opacity: 1, x: 0}
+                }}
+                initial="hidden"
+                animate={mainControlsFitTwo}
+                transition={{duration: 1.5, delay: 1.25}}
+                >
                     <img src={zuzanaThree} alt="fit 2 image" width="100%" />   
-                </div>
-                <div>
+                </motion.div>
+                <motion.div 
+                 variants={
+                    {hidden: {opacity: 0, x: 75},
+                    visible: {opacity: 1, x: 0}
+                }}
+                initial="hidden"
+                animate={mainControlsFitTwo}
+                transition={{duration: 1, delay: 0.5}}
+               
+                >
                     <img src={zuzanaTwo} alt="fit 2 image" width="100%" />
-                </div>
-                <div>
+                </motion.div>
+                <motion.div variants={{
+                    hidden: {opacity: 0},
+                    visible: {opacity: 1}
+                }} 
+                initial="hidden"
+                animate={mainControlsFitTwo}
+                transition={{duration: 1, delay: 0}}
+                className={styles.one}>
                     <img src={zuzanaOne} alt="fit 2 image" width="100%" />
-                </div>
+                </motion.div>
             </div>
             <div className={styles.offerText}>
                 <a href="#"><h1>New arrivals</h1></a>
