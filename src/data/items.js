@@ -12,8 +12,11 @@ export const DUMMY_ITEMS = [
     ],
     size: "XXS",
     price: 22.99,
-    thumbnail: "image",
-    images: ["img", "img", "img"],
+    images: [
+      "src/assets/dummy_shoe.png",
+      "src/assets/topimg_sm.jpg",
+      "src/assets/dummy_shoe.png",
+    ],
   },
   {
     id: "i2",
@@ -28,8 +31,11 @@ export const DUMMY_ITEMS = [
     ],
     size: "XXS",
     price: 3.99,
-    thumbnail: "image",
-    images: ["img", "img", "img"],
+    images: [
+      "src/assets/dummy_shoe.png",
+      "src/assets/dummy_shoe.png",
+      "src/assets/dummy_shoe.png",
+    ],
   },
   {
     id: "i3",
@@ -44,8 +50,11 @@ export const DUMMY_ITEMS = [
     ],
     size: "XXS",
     price: 10.99,
-    thumbnail: "image",
-    images: ["img", "img", "img"],
+    images: [
+      "src/assets/dummy_shoe.png",
+      "src/assets/dummy_shoe.png",
+      "src/assets/dummy_shoe.png",
+    ],
   },
   {
     id: "i4",
@@ -60,8 +69,11 @@ export const DUMMY_ITEMS = [
     ],
     size: "XXS",
     price: 14.99,
-    thumbnail: "image",
-    images: ["img", "img", "img"],
+    images: [
+      "src/assets/dummy_shoe.png",
+      "src/assets/dummy_shoe.png",
+      "src/assets/dummy_shoe.png",
+    ],
   },
   {
     id: "i5",
@@ -76,8 +88,11 @@ export const DUMMY_ITEMS = [
     ],
     size: "XXS",
     price: 18.99,
-    thumbnail: "image",
-    images: ["img", "img", "img"],
+    images: [
+      "src/assets/dummy_shoe.png",
+      "src/assets/dummy_shoe.png",
+      "src/assets/dummy_shoe.png",
+    ],
   },
   {
     id: "i6",
@@ -92,7 +107,10 @@ export const DUMMY_ITEMS = [
     ],
     size: "XXS",
     price: 20.99,
-    thumbnail: "image",
-    images: ["img", "img", "img"],
+    images: [
+      "src/assets/dummy_shoe.png",
+      "src/assets/dummy_shoe.png",
+      "src/assets/dummy_shoe.png",
+    ],
   },
 ];

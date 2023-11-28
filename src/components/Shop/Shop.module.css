@@ -44,6 +44,22 @@
     display: flex;
     flex-direction: row;
     width: 400px;
+    padding-left: 1rem;
+}
+.itemImageArray button {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    margin: 1rem;
+}
+.sizes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.sizes a {
+    color: #260AFF;
+    text-decoration: underline;
 }
 .itemDescription {
     display: flex;

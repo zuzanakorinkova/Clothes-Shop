@@ -1,23 +1,31 @@
-import React, {useContext} from 'react'
+import React, {useContext, useState, useEffect} from 'react'
 import { useParams } from 'react-router-dom'
 import { DUMMY_ITEMS } from '../../data/items'
-import DummyShoe from '../../assets/dummy_shoe.png';
 import styles from './Shop.module.css';
 import ShippingInfo from './ShippingInfo';
 import CartContext from '../../store/cart-context';
+import {motion} from "framer-motion";
 
-export default function SingleItem(props) {
+export default function SingleItem() {
+    const [defaultImage, setDefaultImage] = useState('')
     const params = useParams()
     const cartCtx = useContext(CartContext)
 
     let itemName;
     let itemPrice;
+    let itemImage;
 
-    DUMMY_ITEMS.filter(i => i.id === params.id).map((item) => {
-      itemName = item.name
-      itemPrice = item.price
-    })
-    
+    useEffect(() => {
+      DUMMY_ITEMS.filter(i => i.id === params.id).map((item) => {
+        itemName = item.name
+        itemPrice = item.price
+        itemImage = setDefaultImage(item.images[0])
+      })
+
+    }, [DUMMY_ITEMS])
+
+   
+   console.log(defaultImage) 
 
     const addToCartHandler = () => {
       cartCtx.addToCart({
@@ -31,40 +39,40 @@ export default function SingleItem(props) {
     <>
     {DUMMY_ITEMS.filter(i => i.id === params.id).map((item) => {
         return (
-            <div className={styles.itemContainer}>
+            <div key={item.id} className={styles.itemContainer}>
               <div className={styles.itemImages}>
                 <div>
-                  <img src={DummyShoe} alt="product image" width="100%" />
+                  <img src={'../' + defaultImage} alt="product image" width="100%" />
                 </div>
                 <div className={styles.itemImageArray}>
-                  <div>
-                    <img src={DummyShoe} alt="product image" width="100%"/>
-                  </div>
-                  <div>
-                    <img src={DummyShoe} alt="product image" width="100%" />
-                  </div>
-                  <div>
-                    <img src={DummyShoe} alt="product image" width="100%" />
-                  </div>
+                  {item.images.map((img, index) => {
+                    return (
+                    <button key={index} onClick={() => setDefaultImage(img)}>
+                      <img src={'../' + img} alt="product image" width="100%"/>
+                    </button>
+                    )
+                  })}
                 </div>
               </div>
               <div className={styles.itemDescription}>
                  <h2> {item.name}</h2>
                 <p>$ {item.price.toFixed(2)}</p>
-                <p>{item.size}</p>
                 <ul>
-                <li>{item.description}</li>
-                {item.advantages.map((advantage) => {
-                  return (
-                    <li>
-                    {advantage}
-                  </li>
-                  )
-                 
-                })}
-               
+                  <li>{item.description}</li>
+                  {item.advantages.map((advantage) => {
+                    return (
+                      <li>
+                      {advantage}
+                      </li>
+                    )
+                  })}
                 </ul>
-      
+                <div className={styles.sizes}>
+                  <p>{item.size}</p>
+                  {/* External link? */}
+                  <a href="#">Size guide</a>
+                </div>
+               
                 <button className="primaryBtn" onClick={addToCartHandler}>Add to Cart</button>
                 <div className={styles.shippingInfo}>
                   <ShippingInfo />
