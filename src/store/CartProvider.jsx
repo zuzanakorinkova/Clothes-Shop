@@ -33,7 +33,6 @@ const cartReducer = (state, action) => {
         const updatedTotalAmount =
         state.totalAmount + action.item.price * action.item.amount;
 
-        console.log(updatedTotalAmount)
         return {
             items: updatedItems,
             totalAmount: updatedTotalAmount,
@@ -84,7 +83,7 @@ export default function CartProvider(props) {
 
       const cartContext = {
         amount: null,
-        mealId: "",
+        id: "",
         items: cartState.items,
         totalAmount: cartState.totalAmount, 
         addToCart: addItemToCartHandler,

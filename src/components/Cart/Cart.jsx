@@ -6,6 +6,7 @@ import styles from './Cart.module.css'
 
 
 export default function Cart(props) {
+
     const cartCtx = useContext(CartContext);
 
     const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;

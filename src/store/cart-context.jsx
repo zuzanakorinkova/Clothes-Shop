@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const CartContext = React.createContext({
   amount: null,
-  mealId: "",
+  id: "",
   items: [],
   totalAmount: 0,
   addToCart: (item) => {},

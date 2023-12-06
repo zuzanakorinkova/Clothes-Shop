@@ -35,16 +35,25 @@
     flex-direction: row;
     border-top: 1px solid #000;
     position: relative;
+    align-items: flex-start;
 }
 .itemImages {
     justify-content: center;
-    border-right: 1px solid #000;
+    position: relative;
 }
 .itemImageArray {
     display: flex;
     flex-direction: row;
     width: 400px;
     padding-left: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.itemImages .defaultImage {
+    width: 800px;
+    height: auto;
 }
 .itemImageArray button {
     background-color: #ffffff;
@@ -65,8 +74,10 @@
     display: flex;
     flex-direction: column;
     z-index: 2;
-    justify-content: center;
+    justify-content: space-between;
     padding: 2rem;
+    height: 750px;
+    border-left: 1px solid #000;
 }
 .itemDescription h2, p, button {
     text-align: center;
@@ -78,4 +89,36 @@
     padding-bottom: 1rem;
     border-bottom: 1px solid #000;
     width: 70%;
+}
+
+@media (max-width: 1200px) {
+    .itemImages .defaultImage {
+        width: 500px;
+    }
+}
+
+@media (max-width: 991px) {
+    .itemImages .defaultImage {
+        width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .itemContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .itemImages {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .itemImages .defaultImage {
+        width: 500px;
+    }
+    .itemImageArray {
+        position: relative;
+        padding: 0;
+    }
 }

@@ -34,7 +34,6 @@ h1, h2, h3 {
 
 h1 {
   font-size: 70px;
-
 }
 
 h3 {
@@ -81,27 +80,6 @@ a {
   animation: slide-down 300ms ease-out forwards;
 }
 
-
-@media (min-width: 768px) {
-  .modal {
-    width: 40rem;
-    left: calc(50% - 20rem);
-  }
-}
-
-@keyframes slide-down {
-  from {
-    opacity: 0;
-    transform: translateY(-3rem);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
-
 /* Footer */
 footer {
   margin-top: 10rem;
@@ -132,3 +110,48 @@ footer {
 .socialIcons a:hover {
   scale: 1.2;
 }
+
+@media (min-width: 768px) {
+  .modal {
+    width: 40rem;
+    left: calc(50% - 20rem);
+  }
+}
+
+@media(max-width: 991px) {
+  h1 {
+    font-size: 54px;
+  }
+  footer {
+    margin-top: 5rem;
+    position: relative;
+    z-index: 2;
+  }
+  .footerBackground {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .footerBackground {
+    height: 40vh;
+  }
+}
+@media (max-width: 560px){
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+

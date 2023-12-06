@@ -12,7 +12,7 @@ export default function Router() {
       <Routes>
         <Route path="/" element={<Layout  />}>
           <Route index element={<Main />} />
-          <Route path="shop" element={<AllItems/>} />
+          <Route path="/shop" element={<AllItems/>} />
           <Route path="/shop/:id" element={<SingleItem/>} />
           {/* <Route path="cart" element={<div></div>} /> */}
           {/* <Route path="*" element={<NoPage />} /> */}

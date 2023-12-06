@@ -7,6 +7,15 @@
     color: #000;
     text-decoration: none;
   }
+  .topnav .active {
+    text-decoration: underline;
+  }
+  .topnav a:hover {
+    text-decoration: underline;
+  }
+  .topnav .logo:hover {
+    transform: scale(1.1);
+  }
 .basketIcon {
     width: 1.5rem;
 }  
@@ -27,7 +36,6 @@
     background-color: #000;
     color: #fff;
     padding: 0.25rem 1rem;
-    border-radius: 25px;
     margin-left: 1rem;
     font-weight: bold;
   }
