@@ -6,8 +6,7 @@ import styles from './Header.module.css';
 
 export default function Header(props) {
   const location = useLocation();
-  console.log(location.pathname === '/shop')
-
+  
   return (
     <header>
       <nav className={styles.topnav}>

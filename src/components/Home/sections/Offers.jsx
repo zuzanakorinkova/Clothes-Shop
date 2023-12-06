@@ -9,12 +9,6 @@ import styles from '../Home.module.css';
 import Marquee from "react-fast-marquee";
 import {motion, useInView, useAnimation} from "framer-motion";
 
-
-// NETLIFY
-// https://app.netlify.com/sites/chic-tarsier-bd3736/overview
-//https://www.youtube.com/watch?v=F4oJagFEGJM&t=294s&ab_channel=ArpanNeupane
-// https://www.youtube.com/watch?v=tVzpC5_AC8M&ab_channel=CodeWithArjun
-
 export default function Offers() {
 const refFitOne = useRef(null);
 const refFitTwo = useRef(null);
