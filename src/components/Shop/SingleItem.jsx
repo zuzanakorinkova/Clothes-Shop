@@ -41,13 +41,13 @@ export default function SingleItem() {
             <div key={item.id} className={styles.itemContainer}>
               <div className={styles.itemImages}>
                 <div>
-                  <img className={styles.defaultImage} src={'../' + defaultImage} alt="product image" />
+                  <img className={styles.defaultImage} src={defaultImage} alt="product image" />
                 </div>
                 <div className={styles.itemImageArray}>
                   {item.images.map((img, index) => {
                     return (
                     <button key={index} onClick={() => setDefaultImage(img)}>
-                      <img src={'../' + img} alt="product image" width="100%"/>
+                      <img src={img} alt="product image" width="100%"/>
                     </button>
                     )
                   })}

@@ -13,9 +13,9 @@ export const DUMMY_ITEMS = [
     size: "M",
     price: 22.99,
     images: [
-      "src/assets/clothes/coat-1.png",
-      "src/assets/clothes/coat-2.png",
-      "src/assets/clothes/coat-3.png",
+      "https://images.unsplash.com/photo-1702504854071-f033042135b2?q=80&w=1952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1702504865355-1575e044a684?q=80&w=1952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1702504859612-4d5554e719e4?q=80&w=1952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     ],
   },
   {
@@ -32,9 +32,9 @@ export const DUMMY_ITEMS = [
     size: "One size",
     price: 3.99,
     images: [
-      "src/assets/clothes/hat-1.png",
-      "src/assets/clothes/hat-2.png",
-      "src/assets/clothes/hat-3.png",
+      "https://images.unsplash.com/photo-1702507703992-630aa5477013?q=80&w=2460&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1702507694880-5d738ba889a1?q=80&w=2456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1702507700486-16d0309feecf?q=80&w=2460&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     ],
   },
   {
@@ -70,9 +70,9 @@ export const DUMMY_ITEMS = [
     size: "S",
     price: 14.99,
     images: [
-      "src/assets/clothes/jacket-1.png",
-      "src/assets/clothes/jacket-2.png",
-      "src/assets/clothes/jacket-3.png",
+      "https://images.unsplash.com/photo-1702504833816-e06935bb0b3e?q=80&w=2352&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1702504828596-601c40b8d4d6?q=80&w=2348&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1702504821977-b0d54f8ffd2a?q=80&w=3166&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     ],
   },
   {

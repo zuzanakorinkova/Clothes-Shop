@@ -18,7 +18,7 @@ export default function AllItems() {
                 <h2>{collection.name}</h2>
               </div>
               <div>
-                <img src={`../ ${collection.thumbnail}`} alt="thumbnail" width={50} />
+                <img src={'../' + collection.thumbnail} alt="thumbnail" width={50} />
               </div>
             </div>
             <ul className={styles.cardListContainer}>
