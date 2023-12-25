@@ -104,7 +104,9 @@
   .marquee span {
     padding-left: 2rem;
     font-size: 4rem;
-    color: transparent;
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
     font-weight: bold;
   }
 
