@@ -4,9 +4,11 @@ import { DUMMY_ITEMS } from '../../data/items'
 import styles from './Shop.module.css';
 import ShippingInfo from './ShippingInfo';
 import CartContext from '../../store/cart-context';
+import SizeGuide from './SizeGuide';
 
 export default function SingleItem() {
     const [defaultImage, setDefaultImage] = useState('')
+    const [guideIsShown, setGuideIsShown] = useState(false)
     const [name, setName] = useState('');
     const [price, setPrice] = useState('');
     const params = useParams()
@@ -24,7 +26,13 @@ export default function SingleItem() {
     }, [DUMMY_ITEMS])
 
 
+    const showGuideHandler = () => {
+      setGuideIsShown(true);
+    }
 
+    const hideGuideHandler = () => {
+      setGuideIsShown(false)
+    }
 
     const addToCartHandler = () => {
       cartCtx.addToCart({
@@ -73,7 +81,8 @@ export default function SingleItem() {
                   <div className={styles.sizes}>
                     <p>{item.size}</p>
                     {/* TODO: Modal */}
-                    <a href="#">Size guide</a>
+                    {guideIsShown && <SizeGuide onClose={hideGuideHandler} />}
+                    <a onClick={showGuideHandler}>Size guide</a>
                   </div>
                 
                   <button className="primaryBtn" onClick={addToCartHandler}>Add to Cart</button>

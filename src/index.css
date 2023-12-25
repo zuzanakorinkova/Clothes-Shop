@@ -42,8 +42,19 @@ h3 {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
+table, th, td {
+  border: 1px solid;
+  text-align: center;
+  padding: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
 
 .primaryBtn {
   background-color: #000;
