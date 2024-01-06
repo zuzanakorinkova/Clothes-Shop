@@ -17,9 +17,6 @@ export default function AllItems() {
               <div> 
                 <h2>{collection.name}</h2>
               </div>
-              <div>
-                <img src={'../' + collection.thumbnail} alt="thumbnail" width={50} />
-              </div>
             </div>
             <ul className={styles.cardListContainer}>
               {DUMMY_ITEMS.filter(i => i.collection === collection.id).map((items) => {

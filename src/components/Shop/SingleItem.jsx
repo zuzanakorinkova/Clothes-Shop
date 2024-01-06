@@ -80,7 +80,6 @@ export default function SingleItem() {
                 <div>
                   <div className={styles.sizes}>
                     <p>{item.size}</p>
-                    {/* TODO: Modal */}
                     {guideIsShown && <SizeGuide onClose={hideGuideHandler} />}
                     <a onClick={showGuideHandler}>Size guide</a>
                   </div>

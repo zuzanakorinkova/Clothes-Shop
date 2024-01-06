@@ -8,6 +8,7 @@ import zuzanaThree from '../../../assets/z_3.jpg';
 import styles from '../Home.module.css';
 import Marquee from "react-fast-marquee";
 import {motion, useInView, useAnimation} from "framer-motion";
+import { Link } from 'react-router-dom';
 
 export default function Offers() {
 const refFitOne = useRef(null);
@@ -35,7 +36,7 @@ useEffect(() => {
     <>
         <div className={styles.offerContainer}>
             <div className={styles.offerText}>
-               <a href="#"><h1>Checkout this fit</h1></a>
+               <Link to="/shop"><h1>Check out this fit</h1></Link>
                 <svg className={styles.lineOne} xmlns="http://www.w3.org/2000/svg" width="246.43" height="62.801" viewBox="0 0 246.43 62.801">
                     <path id="Path_4" data-name="Path 4" d="M1736.43,1282.664H1493v-59.8" transform="translate(-1491.5 -1221.363)" fill="none" stroke="#000" strokeLinecap="round" strokeWidth="3"/>
                 </svg>
@@ -134,7 +135,7 @@ useEffect(() => {
                 </motion.div>
             </div>
             <div className={styles.offerText}>
-                <a href="#"><h1>New arrivals</h1></a>
+                <Link to="/shop"><h1>New arrivals</h1></Link>
                 <svg className={styles.lineTwo} xmlns="http://www.w3.org/2000/svg" width="246.43" height="62.801" viewBox="0 0 246.43 62.801">
                     <path id="Path_5" data-name="Path 5" d="M1493,1282.664h243.43v-59.8" transform="translate(-1491.5 -1221.363)" fill="none" stroke="#000" strokeLinecap="round" strokeWidth="3"/>
                 </svg>
