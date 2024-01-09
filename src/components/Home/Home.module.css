@@ -1,121 +1,119 @@
+.mainContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20rem;
+  padding: 1rem;
+}
+.topText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.topText p {
+  text-align: left;
+}
 
+.topText svg {
+  width: 10rem;
+  position: absolute;
+  top: 10rem;
+}
 
-  .mainContainer {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20rem;;
-    padding: 1rem;
-  }
-  .topText {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-  }
-  .topText p {
-    text-align: left;
-  }
+.topimages {
+  position: relative;
+  margin-top: 2rem;
+}
+.topimages .large {
+  width: 90%;
+}
 
-  .topText svg {
-    width: 10rem;
-    position: absolute;
-    top: 10rem;
-  }
+.topimages .small {
+  right: 3rem;
+  top: 16rem;
+  position: absolute;
+  width: 30%;
+}
+.companyName {
+  color: #fff;
+  font-size: 20rem;
+  position: fixed;
+  z-index: 1;
+}
 
-  .topimages {
-    position: relative;
-    margin-top: 2rem;
-  }
-  .topimages .large {
-    width: 90%;
-  }
-  
-  .topimages .small {
-    right: 3rem;
-    top: 16rem;
-    position: absolute;
-    width: 30%;
-  }
-  .companyName {
-    color: #fff;
-    font-size: 20rem;
-    position: fixed;
-    z-index: 1;
-  }
+.offerContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  position: relative;
+  z-index: 3;
+  background-color: #ffffff;
+  padding: 1rem;
+}
+.offerText .lineOne {
+  padding-left: 2rem;
+}
+.offerText .lineTwo {
+  padding-right: 2rem;
+}
 
-  .offerContainer {
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
-    position: relative;
-    z-index: 3;
-    background-color: #ffffff;
-    padding: 1rem;
-  }
-  .offerText .lineOne {
-    padding-left: 2rem;
-  }
-  .offerText .lineTwo {
-    padding-right: 2rem;
-  }
-
-  /* create this keyframes for both offers + trigger animation on scroll */
-  @keyframes slidein {
-    from {
-      transform: translateX(100%);
-    }
-  
-    to {
-      transform: translateX(0%);
-    }
-  }
-  .offerFits {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-  }
-  .offerFits .one {
-    z-index: 2;
+/* create this keyframes for both offers + trigger animation on scroll */
+@keyframes slidein {
+  from {
+    transform: translateX(100%);
   }
 
-  .marqueeContainer {
-    position: relative;
-    background-color: #000000;
-    height: 500px;
+  to {
+    transform: translateX(0%);
   }
-  .marqueeOne {
-    transform: rotate(45deg);
-  }
-  .marqueeTwo {
-    transform: rotate(-45deg);
-  }
-  
-  .marquee {
-    white-space: nowrap;
-    position: relative;
-    display: inline-block;
-    animation: marquee 30s linear infinite;
-    width: 100%;
-    padding: 2rem 0;
-  }
-  .marquee span {
-    padding-left: 2rem;
-    font-size: 4rem;
-    color: black;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
-    font-weight: bold;
-  }
+}
+.offerFits {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.offerFits .one {
+  z-index: 2;
+}
 
-@media (max-width: 1200px){
+.marqueeContainer {
+  position: relative;
+  background-color: #000000;
+  height: 500px;
+}
+.marqueeOne {
+  transform: rotate(45deg);
+}
+.marqueeTwo {
+  transform: rotate(-45deg);
+}
+
+.marquee {
+  white-space: nowrap;
+  position: relative;
+  display: inline-block;
+  animation: marquee 30s linear infinite;
+  width: 100%;
+  padding: 2rem 0;
+}
+.marquee span {
+  padding-left: 2rem;
+  font-size: 4rem;
+  color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 1200px) {
   .companyName {
     font-size: 15rem;
   }
 }
-@media (max-width: 991px){
+@media (max-width: 991px) {
   .topText svg {
     width: 5rem;
     top: 5rem;
@@ -136,15 +134,16 @@
     display: none;
   }
   .topText svg {
-   display: none;
+    display: none;
   }
   .companyName {
     font-size: 8rem;
   }
   .mainContainer {
-    margin-bottom: 5rem;;
+    margin-bottom: 5rem;
   }
-  .offerFits .two, .offerFits .three {
+  .offerFits .two,
+  .offerFits .three {
     display: none;
   }
   .marqueeContainer {
@@ -166,6 +165,6 @@
 }
 @media (max-width: 560px) {
   .topText {
-   display: none;
+    display: none;
   }
 }

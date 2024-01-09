@@ -1,109 +1,108 @@
 .cart-items {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    max-height: 20rem;
-    overflow: auto;
-    max-height: 20rem;
-    overflow: scroll;
-  }
-  
-  .total {
-    border-top: 1px solid #eee;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0;
-  }
-  .noItems {
-    text-align: center;
-    margin: 1rem 0;
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
- .actions {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
- }
-  .actions button {
-    font: inherit;
-    cursor: pointer;
-    background-color: transparent;
-    border: 1px solid #000000;
-    padding: 0.5rem 2rem;
-    margin-top: 2rem;
-  }
-  
-  .actions button:hover,
-  .actions button:active {
-    background-color: #000000;
-    border-color: #000000;
-    color: white;
-  }
-  
-  .actions .button--alt {
-    color: #000000;
-  }
-  
-  .actions .button {
-    background-color: #000000;
-    color: white;
-  }
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 20rem;
+  overflow: auto;
+  max-height: 20rem;
+  overflow: scroll;
+}
 
-  .cartItem {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-  }
-  
-  .cartItem .name {
-    font-size: 1.2rem;
-    margin: 0 0 0.5rem 0;
-    color: #363636;
-  }
-  
-  .summary {
-    width: 10rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .price {
-    font-weight: bold;
-    color: #000000;
-  }
-  
-  .amount {
-    padding: 0.25rem 0.75rem;
-    color: #363636;
-  }
-  
-  .actions {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  
-  .cartItem button {
-    font: inherit;
-    font-weight: bold;
-    font-size: 1.25rem;
-    color: #000000;
-    border: 1px solid #000000;
-    cursor: pointer;
-    padding: 0.2rem 1rem;
-    margin-left: 1rem;
-    margin: 0.25rem;
-  }
-  
-  .cartItem button:hover,
-  .cartItem button:active {
-    background-color: #000000;
-    color: white;
-  }
+.total {
+  border-top: 1px solid #eee;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.noItems {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.actions button {
+  font: inherit;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #000000;
+  padding: 0.5rem 2rem;
+  margin-top: 2rem;
+}
+
+.actions button:hover,
+.actions button:active {
+  background-color: #000000;
+  border-color: #000000;
+  color: white;
+}
+
+.actions .button--alt {
+  color: #000000;
+}
+
+.actions .button {
+  background-color: #000000;
+  color: white;
+}
+
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.cartItem .name {
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem 0;
+  color: #363636;
+}
+
+.summary {
+  width: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-weight: bold;
+  color: #000000;
+}
+
+.amount {
+  padding: 0.25rem 0.75rem;
+  color: #363636;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+}
+
+.cartItem button {
+  font: inherit;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #000000;
+  border: 1px solid #000000;
+  cursor: pointer;
+  padding: 0.2rem 1rem;
+  margin-left: 1rem;
+  margin: 0.25rem;
+}
+
+.cartItem button:hover,
+.cartItem button:active {
+  background-color: #000000;
+  color: white;
+}

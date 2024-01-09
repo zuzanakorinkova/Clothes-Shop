@@ -5,13 +5,12 @@ import CartProvider from "./store/CartProvider";
 import ScrollToTop from "./ScrollToTop";
 
 function App() {
-    return (
-        <CartProvider>
-            <Router  />
-            <Footer />
-       </CartProvider>
-       
-    )
+  return (
+    <CartProvider>
+      <Router />
+      <Footer />
+    </CartProvider>
+  );
 }
 
 export default App;

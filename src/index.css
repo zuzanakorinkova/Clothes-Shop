@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.5;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -21,13 +21,15 @@ body {
   padding: 0;
   /* background: linear-gradient(180deg, #22182f 0%, #2c2437 100%); */
   background-color: #ffffff;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 header {
   padding: 1rem;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   line-height: 1;
   font-weight: 400;
 }
@@ -45,7 +47,9 @@ a {
   cursor: pointer;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid;
   text-align: center;
   padding: 1rem;
@@ -129,7 +133,7 @@ footer {
   }
 }
 
-@media(max-width: 991px) {
+@media (max-width: 991px) {
   h1 {
     font-size: 54px;
   }
@@ -148,7 +152,7 @@ footer {
     height: 40vh;
   }
 }
-@media (max-width: 560px){
+@media (max-width: 560px) {
   h1 {
     font-size: 40px;
   }
@@ -164,5 +168,3 @@ footer {
     transform: translateY(0);
   }
 }
-
-

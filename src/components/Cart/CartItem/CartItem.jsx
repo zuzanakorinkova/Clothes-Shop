@@ -1,4 +1,4 @@
-import styles from '../Cart.module.css';
+import styles from "../Cart.module.css";
 
 const CartItem = (props) => {
   const price = `$${props.price.toFixed(2)}`;

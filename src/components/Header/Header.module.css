@@ -1,68 +1,67 @@
 .topnav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .topnav a {
-    color: #000;
-    text-decoration: none;
-  }
-  .topnav .active {
-    text-decoration: underline;
-  }
-  .topnav a:hover {
-    text-decoration: underline;
-  }
-  .topnav .logo:hover {
-    transform: scale(1.1);
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topnav a {
+  color: #000;
+  text-decoration: none;
+}
+.topnav .active {
+  text-decoration: underline;
+}
+.topnav a:hover {
+  text-decoration: underline;
+}
+.topnav .logo:hover {
+  transform: scale(1.1);
+}
 .basketIcon {
-    width: 1.5rem;
-}  
+  width: 1.5rem;
+}
 
 .basketBtn {
-    cursor: pointer;
-    font: inherit;
-    border: none;
-    background-color: #fff;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-weight: bold;
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+}
+
+.basketBadge {
+  background-color: #000;
+  color: #fff;
+  padding: 0.25rem 1rem;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.basketBtn:hover .basketBadge,
+.basketBtn:active .basketBadge {
+  transform: scale(1.1);
+}
+
+.basketBump {
+  animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
   }
-    
-  
-  .basketBadge {
-    background-color: #000;
-    color: #fff;
-    padding: 0.25rem 1rem;
-    margin-left: 1rem;
-    font-weight: bold;
+  10% {
+    transform: scale(0.9);
   }
-  
-  .basketBtn:hover .basketBadge,
-  .basketBtn:active .basketBadge {
+  30% {
     transform: scale(1.1);
   }
-  
-  .basketBump {
-    animation: bump 300ms ease-out;
+  50% {
+    transform: scale(1.15);
   }
-  
-  @keyframes bump {
-    0% {
-      transform: scale(1);
-    }
-    10% {
-      transform: scale(0.9);
-    }
-    30% {
-      transform: scale(1.1);
-    }
-    50% {
-      transform: scale(1.15);
-    }
-    100% {
-      transform: scale(1);
-    }
+  100% {
+    transform: scale(1);
   }
+}

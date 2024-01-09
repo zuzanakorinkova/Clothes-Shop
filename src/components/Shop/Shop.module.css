@@ -1,125 +1,125 @@
-
 .collectionContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem 1rem 0 1rem;
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 1rem 0 1rem;
 }
 
 .cardListContainer {
-    border-top: 1px solid #000;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0,1fr));
-    width: calc(100% + 1px);
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+  border-top: 1px solid #000;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: calc(100% + 1px);
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 .cardList {
-    border-right: 1px solid #000;
-    border-bottom: 1px solid #000;
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    text-align: center;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
 }
 .cardList img {
-    width: 50%;
+  width: 50%;
 }
 
 .itemContainer {
-    display: flex;
-    flex-direction: row;
-    border-top: 1px solid #000;
-    position: relative;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #000;
+  position: relative;
+  align-items: flex-start;
 }
 .itemImages {
-    justify-content: center;
-    position: relative;
+  justify-content: center;
+  position: relative;
 }
 .itemImageArray {
-    display: flex;
-    flex-direction: row;
-    width: 400px;
-    padding-left: 1rem;
-    position: absolute;
-    top: 0;
-    right: 0;
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  padding-left: 1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .itemImages .defaultImage {
-    width: 800px;
-    height: auto;
+  width: 800px;
+  height: auto;
 }
 .itemImageArray button {
-    background-color: #ffffff;
-    border: 1px solid #000000;
-    margin: 1rem;
-    cursor: pointer;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  margin: 1rem;
+  cursor: pointer;
 }
 .sizes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .sizes a {
-    color: #260AFF;
-    text-decoration: underline;
+  color: #260aff;
+  text-decoration: underline;
 }
 .itemDescription {
-    display: flex;
-    flex-direction: column;
-    z-index: 2;
-    justify-content: space-between;
-    padding: 2rem;
-    height: 750px;
-    border-left: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  justify-content: space-between;
+  padding: 2rem;
+  height: 750px;
+  border-left: 1px solid #000;
 }
-.itemDescription h2, p, button {
-    text-align: center;
+.itemDescription h2,
+p,
+button {
+  text-align: center;
 }
 .shippingInfo {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 .shippingTitle {
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #000;
-    width: 70%;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #000;
+  width: 70%;
 }
 
 @media (max-width: 1200px) {
-    .itemImages .defaultImage {
-        width: 500px;
-    }
+  .itemImages .defaultImage {
+    width: 500px;
+  }
 }
 
 @media (max-width: 991px) {
-    .itemImages .defaultImage {
-        width: 400px;
-    }
+  .itemImages .defaultImage {
+    width: 400px;
+  }
 }
 
 @media (max-width: 768px) {
-    .itemContainer {
-        flex-direction: column;
-        align-items: center;
-    }
-    .itemImages {
-        order: 2;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .itemImages .defaultImage {
-        width: 500px;
-    }
-    .itemImageArray {
-        position: relative;
-        padding: 0;
-    }
+  .itemContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .itemImages {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .itemImages .defaultImage {
+    width: 500px;
+  }
+  .itemImageArray {
+    position: relative;
+    padding: 0;
+  }
 }
